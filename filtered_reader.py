@@ -1,8 +1,6 @@
 import tensorflow as tf
 import numpy as np
 
-
-
 with tf.Graph().as_default():
 	with tf.Session() as sess:
 		for i in range(1,874):
