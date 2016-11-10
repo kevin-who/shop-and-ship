@@ -14,3 +14,5 @@ print(filtered_regions)
 plt.figure(figsize=(60, 30))
 sns.distplot(filtered_regions["pixels"],bins=100, rug=False)
 plt.savefig("real_histogram.png")
+
+filtered_regions.to_csv("k_filtered_pixel_counts.csv", sep=',')
