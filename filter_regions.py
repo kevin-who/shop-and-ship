@@ -24,3 +24,5 @@ for region_id in range(1,874):
 		bad_regions.append(region_id)
 
 print(len(bad_regions))
+
+np.savetxt('bad_regions.txt', np.array(bad_regions), fmt='%d')
