@@ -10,4 +10,4 @@ bad_regions = [int(x) for x in bad_regions]
 print(bad_regions)
 
 for i in bad_regions:
-	os.remove("filtered_binary_arrays/" + str(i) + ".txt")
+	os.remove("filtered_pngs/" + str(i) + ".png")
