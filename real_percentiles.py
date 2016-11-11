@@ -9,8 +9,8 @@ pixel_counts = pd.read_csv("k_filtered_pixel_counts.csv")
 pixel_counts = np.array(pixel_counts)
 percentiles = []
 
-for i in range(1,1001):
-	percentiles.append(np.percentile(pixel_counts,i/10))
+for i in range(1,100):
+	percentiles.append(np.percentile(pixel_counts,i))
 
 print(percentiles)
 
