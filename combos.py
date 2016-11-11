@@ -16,25 +16,6 @@ def top_n(n):
 	pixel_counts = pixel_counts.sort_values("pixels",axis=0,ascending=False)
 	return list(pixel_counts["region"])[:n]
 
-
-# fn = 'binary_arrays/' + str(437) + '.txt'
-# with open(fn, 'r') as bits:
-# 	bits_string = bits.read()
-
-# bits_string1 = BitArray(bin=bits_string)
-
-# fn = 'binary_arrays/' + str(322) + '.txt'
-# with open(fn, 'r') as bits:
-# 	bits_string = bits.read()
-
-# bits_string2 = BitArray(bin=bits_string)
-
-# combo = bits_string1 | bits_string2
-
-# print(combo.count("1"))
-
-
-
 top_num = 100
 sample_n = 10000
 choose = 10
