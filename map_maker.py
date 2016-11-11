@@ -6,7 +6,7 @@ from bitstring import BitArray
 
 with tf.Graph().as_default():
 	with tf.Session() as sess:
-		map_string = "416_506_529_498_286_492_550_202_116_484_475_334_561_308_222_424_411_519_186_319_572_149_396_454_404"
+		map_string = "195_529_322_64_487_459_507_248_129_550_307_99_258_510_101_334_289_192_226_203_437_145_207_446_401"
 		region_ids = [int(x) for x in map_string.split("_")]
 		print(region_ids)
 
