@@ -6,7 +6,7 @@ from bitstring import BitArray
 
 with tf.Graph().as_default():
 	with tf.Session() as sess:
-		map_string = "195_529_322_64_487_459_507_248_129_550_307_99_258_510_101_334_289_192_226_203_437_145_207_446_401"
+		map_string = "484_561_459_322_64_158_41_315_384_437_192_510_504_534_308_334_487_128_207"
 		region_ids = [int(x) for x in map_string.split("_")]
 		print(region_ids)
 
@@ -26,6 +26,9 @@ with tf.Graph().as_default():
 
 			all_or = all_or | bit_array
 
+
+		print(all_or.count("1"))
+
 		bit_array = [int(x) for x in list(str(all_or.bin))]
 		bit_array = np.array(bit_array)*255
 		tensor = bit_array.astype(np.uint8)
@@ -33,6 +36,6 @@ with tf.Graph().as_default():
 		output_image = tf.image.encode_png(tensor)
 		init_op = tf.initialize_all_variables()
 		#save the output
-		f = open("map_maker/" + map_string + ".png", "wb+")
+		f = open("map_maker/" + "final_" + map_string + ".png", "wb+")
 		f.write(output_image.eval())
 		f.close()

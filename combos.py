@@ -35,9 +35,9 @@ def top_n(n):
 
 
 
-top_num = 325
+top_num = 100
 sample_n = 10000
-choose = 18
+choose = 10
 regions_list = top_n(top_num)
 regions_dict = {}
 random_samples = []
